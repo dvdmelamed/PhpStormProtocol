@@ -4,7 +4,7 @@ This app allows to use ```pstorm://``` protocol to open a file in a [PhpStorm ID
 
 Following string must be specified as an editor in your app:
 ```bash
-pstorm://open/?url=file://%file&line=%line
+pstorm://open/?url=file://%f&line=%l
 ```
 If something doesn't work, then feel free to [submit an issue](https://github.com/aik099/PhpStormProtocol/issues/new) on GitHub.
 
@@ -17,6 +17,10 @@ Installing on Mac
 2. go to cloned folder
 2. copy folder ```PhpStorm Protocol.app``` to ```/Applications/``` folder
 3. delete cloned folder
+4. add the following link to the php.ini file: 
+   [xdebug]
+   xdebug.file_link_format="pstorm://open/?url=file://%f&line=%l" 
+
 
 Installing on Windows
 =====================
@@ -27,3 +31,8 @@ Installing on Windows
 5. agree to whatever Registry Editor asks you
 6. update settings at ```C:\Program Files\PhpStorm Protocol (Win)\run_editor.js``` file, because each PhpStorm version is installed into it's own sub-folder!
 7. delete cloned folder
+8. add the following link to the php.ini file: 
+   [xdebug]
+   xdebug.file_link_format="pstorm://open/?url=file://%f&line=%l" 
+
+
