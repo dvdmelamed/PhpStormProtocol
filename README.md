@@ -18,9 +18,9 @@ Installing on Mac
 2. copy folder ```PhpStorm Protocol.app``` to ```/Applications/``` folder
 3. delete cloned folder
 4. add the following link to the php.ini file (/opt/local/etc/php5/php.ini): 
-```[xdebug]
-xdebug.file_link_format="pstorm://open/?url=file://%f&line=%l"
-```
+```[xdebug]```
+```xdebug.file_link_format="pstorm://open/?url=file://%f&line=%l"```
+
 
 
 Installing on Windows
@@ -33,8 +33,8 @@ Installing on Windows
 6. update settings at ```C:\Program Files\PhpStorm Protocol (Win)\run_editor.js``` file, because each PhpStorm version is installed into it's own sub-folder!
 7. delete cloned folder
 8. add the following link to the php.ini file (/opt/local/etc/php5/php.ini): 
-```[xdebug]
-xdebug.file_link_format="pstorm://open/?url=file://%f&line=%l"
-```
+```[xdebug]```
+```xdebug.file_link_format="pstorm://open/?url=file://%f&line=%l"```
+
 
 
